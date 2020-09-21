@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 7px;
 }
 
 
@@ -24,11 +24,18 @@ a{
 
 p{
     padding: 1.6rem 0;
+    font-size: 2rem;
 }
 
 img{
     width: 100%;
     height: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
@@ -94,4 +101,64 @@ header h1{
 }
 .col-content{
     padding: 1.5rem;
+}
+
+/*section-c*/
+
+#section-c{
+    background-color: #eaeaeaea;
+    color:#333;
+    padding: 5rem;
+}
+/*section-d*/
+
+#section .box{
+    padding: 5rem;
+}
+
+#section-d .box:first-child{
+    background-color: #2690d4;
+    color:#eaeaea;
+}
+
+/*footer*/
+
+footer{
+    background-color: #000;
+    padding: 4rem;
+    
+}
+
+footer a{
+    color:#2690d4;
+}
+
+
+@media screen and (min-width:9px){
+    html{
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1200px){
+    #section-b li{
+    width:28%;
+    margin:1%;
+    display: inline-block;
+    }
+    
+ .box{
+        width: 50%;
+        float:left;
+        
+    }
+    html{
+        font-size: 12px;
+    }
 }
